@@ -46,3 +46,19 @@ opencv-python==4.12.0.88
 ```
 streamlit run web_vis.py
 ```
+
+## Initial Calibration
+Using `gstreamer`, capture a frame from the camera and send it to the host machine using `scp`.
+
+Run the `calibration.py` and select the 6 points (four corners and corners of two white keys).
+
+The calibration format will be as such:
+```
+19 160
+424 158
+394 34
+53 33
+183 32
+221 32
+```
+Copy the values to the `calibration_values.txt` file on the BeagleBone.
