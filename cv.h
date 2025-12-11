@@ -1,5 +1,3 @@
-#pragma once
-
 #include "config.h"
 
 #include <opencv2/opencv.hpp>
