@@ -29,7 +29,7 @@ sudo apt-get install libopencv-dev python3-opencv
 ## Compilation of PianoVision Client
 For this project, we performed compilation on the BeagleBone itself without needing to cross-compile it on the host system.
 ```
-g++ main.cpp network.h cv.h config.h config.cpp -o exec_final `pkg-config --cflags --libs opencv4`
+g++ main.cpp network.h network.cpp cv.h cv.cpp config.h config.cpp -o exec_final `pkg-config --cflags --libs opencv4`
 ```
 
 ## Environment Setup of PianoVision Server
@@ -44,7 +44,7 @@ opencv-python==4.12.0.88
 
 ## Run the PianoVision Server
 ```
-streamlit run web_vis.py
+streamlit run server.py
 ```
 
 ## Initial Calibration
